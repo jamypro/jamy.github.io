@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuegos Recomendados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>para mi mejora Deisy, tqm</h1>
+    </header>
+
+    <main>
+        <section id="busqueda">
+            <input type="text" id="search-input" placeholder="Buscar videojuegos..." onkeyup="buscarVideojuegos()">
+        </section>
+        
+        <section id="contenido-principal">
+            <h2>Juegos Populares</h2>
+            <div id="cards-container"></div>
+        </section>
+
+        <section id="paginacion">
+            <button id="prev-button" onclick="cambiarPagina(-1)">Anterior</button>
+            <button id="next-button" onclick="cambiarPagina(1)">Siguiente</button>
+        </section>
+    </main>
+<!-- Modal para mostrar la información adicional -->
+<div id="game-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <img id="modal-image" src="" alt="Imagen del juego" />
+        <p id="modal-description"></p>
+        <p id="modal-release-date"></p>
+        <p id="modal-developers"></p>
+    </div>
+</div>
+    <footer>
+        <p>Grupo 1b | Proyecto SPA de Videojuegos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
