@@ -1,4 +1,4 @@
-const apiKey = '6618c185b6194c39be9e97d2544cc48c';  // Reemplaza con tu clave de API RAWG
+const apiKey = '6618c185b6194c39be9e97d2544cc48c';  
 const baseUrl = 'https://api.rawg.io/api/games';
 
 // Función para obtener los videojuegos usando el proxy
@@ -56,7 +56,7 @@ function renderizarCards(juegos) {
 
 // Función para mostrar más información sobre el juego
 function mostrarMasInfo(id) {
-    const apiKey = '6618c185b6194c39be9e97d2544cc48c'; // Reemplaza con tu clave de API
+    const apiKey = '6618c185b6194c39be9e97d2544cc48c'; 
     const url = `https://api.rawg.io/api/games/${id}?key=${apiKey}`;
     
     fetch(url)
